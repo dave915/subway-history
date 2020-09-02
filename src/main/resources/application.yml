@@ -20,3 +20,20 @@ seoul:
   api:
     host: http://openapi.seoul.go.kr:8088
     key: 67554e6f59786f67313031465764716f
+
+subwayhistory:
+  logstash:
+    host: 127.0.0.1:15000
+
+---
+spring:
+  profiles: docker
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db:3306/subwayhistory?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: root
+
+subwayhistory:
+  logstash:
+    host: taehyun915.synology.me:15000
