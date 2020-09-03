@@ -23,7 +23,7 @@ seoul:
 
 subwayhistory:
   logstash:
-    host: 127.0.0.1:15000
+    host: 127.0.0.1:25000
 
 ---
 spring:
@@ -36,4 +36,4 @@ spring:
 
 subwayhistory:
   logstash:
-    host: taehyun915.synology.me:15000
+    host: taehyun0915.synology.me:25000
